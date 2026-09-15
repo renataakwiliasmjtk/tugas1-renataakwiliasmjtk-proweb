@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+   
+    <fieldset>
+
+        <!--kotak pertama : Daftar Akun Baru-->
+   
+       <legend>
+         <h2>Daftar Akun Baru</h2></legend>
+      
+       <table>
+         <tr>
+   <td> <label> <for="username">Username</label></td>
+<td> <input type="text" name="nama pengguna" id="username"> </td>
+</tr>
+  
+<tr>
+   <td> <label> <for="password">Password</label></td>
+<td> <input type="text" name="passwword" id="password"> </td>
+</tr>
+
+<tr>
+   <td> <label> <for="alamat">Alamat</label></td>
+<td> <textarea rows="10" cols="50" id="alamat"></textarea></td>
+</tr>
+
+      
+         <tr>
+            <td><label for="program_studi">Program Studi</label></td>
+               <td> <select id="program_studi" name="program_studi">
+               <option value="S-1_ilmu_komputer">S-1 Ilmu Komputer</option>
+                <option value="S-1_Teknologi_Informasi">S-1 Teknologi Informasi</option>
+                 <option value="S-2_teknik_informatika">S-2 Teknik Informatika</option>
+                  <option value="S-2_ Sains_Data_dan_Kecerdasan_Buatan">S-2 Sains Data dan Kecerdasan Buatan</option>
+                   <option value="S-3_ilmu_komputer">S-3 Ilmu Komputer</option>
+               
+               </select>
+                  </td>
+         </tr>
+
+ <tr>
+   <td> <label> <for="tanggal_lahir">tanggal Lahir</label></td>
+   <td> <input type="date" name="tanggal_lahir" id="tanggal_lahir"> </td>
+</tr>
+
+ <tr>
+   <td> <label> <for="jenis_kelamin">Jenis Kelamin</label></td>
+   <td> <label for="pria"><input type="radio" name="jenis_kelamin" id="pria" value="pria" >Pria</label> 
+      <br>
+ <label for="wanita"><input type="radio" name="jenis_kelamin" id="wanita" value="wanita" >Wanita</label> </td>
+
+</tr>
+
+<tr>
+   <td> <label> <for="dessert_kesukaan">Dessert Kesukaan</label></td>
+   <td> <label for="gelato"> <input type="checkbox" name="gelato" id="gelato" value="gelato">Gelato</label> <br>
+ <label for="dessert box"> <input type="checkbox" name="dessertbox" id="dessertbox" value="dessertbox">Dessert Box</label> <br>
+ <label for="pudding"> <input type="checkbox" name="pudding" id="pudding" value="pudding">pudding</label> <br>
+<label for="dubaichewycookie"> <input type="checkbox" name="dubaichewycookie" id="dubaichewycookie" value="dubaichewycookie">Dubai Chewy Cookie</label> <br>
+<label for="icecream"> <input type="checkbox" name="icecream" id="icecream" value="icecream">Ice Cream</label></td>
+</tr>
+
+
+</table>
+ </fieldset>
+
+<button style="background-color: black; color: white;" type="register" name="register">Register</button>
+<button type="reset" name="btn-reset">Reset</button>
+
+
+
+</body>
+</html>

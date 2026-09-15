@@ -1,0 +1,131 @@
+* h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    color:#f3c5d8;
+}
+
+/* Fieldset dan legend */
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+    color: #fff;
+}
+
+
+.checks label {
+    margin-top: 0;
+    
+
+}
+
+label:first-of-type {
+    margin-top: 0;
+    
+}
+
+/* Input dan textarea */
+input {
+    padding: 0.5em;
+    border: solid 1px #999;
+    align-items: center;
+    gap: 10px;
+    margin: 10;
+    padding: 10px 12px;
+    background: #f3c5d8;
+    border-radius: 10px;
+
+}
+
+input[type="alamat"],
+input[type="text"],
+input[type="tanggal_lahir"],
+input[type="jenis kelamin"],
+textarea,
+select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: 2px solid #f3c5d8;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    background: #f3c5d8;
+
+}
+
+.options 
+{ 
+    align-items: center;
+    gap: 10px;
+    margin: 10;
+    padding: 10px 12px;
+    background: #f3c5d8;
+    border-radius: 10px;
+}
+
+ 
+
+textarea {
+    min-height: 8em;
+    min-width: 100%;
+    padding: 0.5em;
+    border: solid 1px #999;
+}
+
+/* Radio buttons dan checkboxes */
+.checks {
+    margin-bottom: 1em;
+    align-items: center;
+    gap: 10px;
+    margin: 10;
+    padding: 10px 12px;
+    background: #f3c5d8;
+    border-radius: 10px;
+
+}
+
+.checks p {
+    margin-bottom: 0;
+    align-items: center;
+    gap: 10px;
+    margin: 10;
+    padding: 10px 12px;
+    background: #f3c5d8;
+    border-radius: 10px;
+
+}
+
+/* Submit Button */
+input[type="submit"] {
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+}
+
+/* Large screen rules */
+@media screen and (min-width: 430px) {
+    legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+        margin: auto;
+        background-color: #6e2d48;
+    }
+
+    .checks label {
+        display: inline-block;
+        padding-top: 0.5em;
+        margin-top: 0;
+        margin-right: 0.5em;
+    }
+}
