@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="tugas3.css" >
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .list{
+            width: 400px;
+            margin: 40x auto;
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        input[type="number"],
+        input[type="text"]{
+            width: 100%;
+            padding: 4px;
+        }
+
+        button{
+            width: 40px;
+            height: 30px;
+            font-size: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="list">
+    <table>
+        <tr>
+            <td>Input Bilangan 1</td>
+            <td><input type="number" id="Bil1"></td>
+        </tr>
+
+        <tr>
+            <td>Input Bilangan 2</td>
+            <td><input type="number" id="Bil2"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="hitung('+')">+</button>
+                <button onclick="hitung('-')">-</button>
+                <button onclick="hitung('*')">×</button>
+                <button onclick="hitung('/')">/</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Output</td>
+            <td><input type="text" id="hasil" readonly></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+function hitung(operator){
+    let a = parseFloat(document.getElementById("Bil1").value);
+    let b = parseFloat(document.getElementById("Bil2").value);
+    let hasil;
+
+    if(operator == '+'){
+        hasil = a + b;
+    }
+    else if(operator == '-'){
+        hasil = a - b;
+    }
+    else if(operator == '*'){
+        hasil = a * b;
+    }
+    else if(operator == '/'){
+        hasil = a / b;
+    }
+
+    document.getElementById("hasil").value = hasil;
+}
+</script>
+
+</body>
+</html>
