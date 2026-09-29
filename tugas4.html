@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belajar Bootstrap</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+<div class="container-fluid">  
+    <a class="navbar-brand" href="#">Pemrograman Web</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Materi
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">HTML</a></li>
+           <li><a class="dropdown-item" >CSS</a></li>
+          <li><a class="dropdown-item" >Java Script</a></li>
+          <li><a class="dropdown-item" >PHP</a></li>
+            <li><a class="dropdown-item" > MySQ</a></li>
+            
+
+            <li><hr class="dropdown-divider"></li>
+           
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            tugas ProWeb
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="tugas1.html">Tugas 1</a></li>
+           <li><a class="dropdown-item" href="tugas2.html">Tugas 2</a></li>
+          <li><a class="dropdown-item" href="tugas3.html">Tugas 3</a></li>
+            
+
+            <li><hr class="dropdown-divider"></li>
+           
+          </ul>
+        </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Jadwal Kuliah
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Reguler : Rabu/ 08.00-10.30</a></li>
+            <li><a class="dropdown-item">Praktikum : Rabu/ 10.30-12.10</a></li>
+         
+          
+            
+
+            <li><hr class="dropdown-divider"></li>
+           
+          </ul>
+          
+      <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+      <a class="btn btn-outline-success" href="#">Daftar</a>
+      </li>
+      <li class="nav-item ms-1g-2 mt-2 mt-lg-0">
+      <a class="btn btn-outline-success" href="#">Masuk</a>
+      </li>
+        
+    </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <section>
+    <div class="container mt-4">
+      <div class="row">
+
+        <!-- 2. Kolom Kiri (Teks) -->
+        <div class="col-md-6">
+          <h1 style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            Hai! <br />Selamat Datang di Kelas Pemograman Web
+          </h1>
+          <p>
+            Belajar Pemrograman Web mulai dari HTML, CSS, Java Script, PHP, dan MySQL
+          </p>
+          
+          <button type="button" class="btn btn-secondary">Mulai Belajar</button>
+        </div>
+
+        <!-- 3. Kolom Kanan (Gambar) -->
+        <div class="col-md-6">
+          <!-- Tambahkan class img-fluid agar gambar responsif & menyesuaikan kolom -->
+          <img src="belajarkomputer.jpg" alt="" class="img-fluid" width="600">
+        </div>
+
+      </div>
+    </div>
+  <section class="py-5 bg-light" id="materi">
+  <h2 class="text-center mb-2">
+     MATA KULIAH
+  </h2>
+  <div class="row g-4">
+  <!--HTML-->
+  <div class="col-md-4">
+  <div class="card h-100 p-3">
+  <div class="card-body">
+  <h4 href="https://lmsspada.kemdiktisaintek.go.id/pluginfile.php/718693/mod_resource/content/1/1.%20INTRODUCTION_PRESENTASI%20PDK%20UM%20METRO-UMMAT.pdf"> Organisasi dan Arsitektur Komputer (AOK) </h4>
+  <p>
+
+ilmu yang mempelajari struktur, perancangan, dan keterkaitan antar-komponen fisik dalam sebuah sistem komputer untuk menjalankan fungsinya.
+
+  </p>
+  <a href="#html" class="btn btn-success">PELAJARI SELENGKAPNYA</a>
+  </div>
+  </div>
+  </div>
+  <!--CSS-->
+  <div class="col-md-4">
+  <div class="card h-100 p-3">
+  <div class="card-body">
+  <h4>Dasar Pemograman</h4>
+  <p>
+ pondasi, aturan, dan logika dasar yang digunakan untuk membuat instruksi agar komputer dapat menjalankan tugas tertentu.
+  </p>
+  <a href="#html" class="btn btn-success">PELAJARI SELENGKAPNYA</a>
+  </div>
+  </div>
+  </div>
+  <!--JavaScript-->
+  <div class="col-md-4">
+  <div class="card h-100 p-3">
+  <div class="card-body">
+  <h4>Matematika Dasar</h4>
+  <p>
+     cabang matematika yang menjadi pondasi logika, perancangan sistem, dan pembuatan algoritma pada komputer.
+
+  </p>
+  <a href="#html" class="btn btn-success">PELAJARI SELENGKAPNYA</a>
+  </div>
+  </div>
+  </div>
+
+
+
+  <!-- JS Bootstrap (juga CDN untuk konsistensi) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
